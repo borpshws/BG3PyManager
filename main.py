@@ -1,5 +1,5 @@
 from enum import Enum
-import pants.backend
+import pants.api
 import pants.ui
 import sys
 

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+  <version major="4" minor="0" revision="9" build="331" />
+  <region id="ModuleSettings">
+    <node id="root">
+      <children>
+        <node id="ModOrder">
+          <children>
+            <node id="Module">
+              <attribute id="UUID" value="28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8" type="FixedString" />
+            </node>
+            <node id="Module">
+              <attribute id="UUID" value="fb5f528d-4d48-4bf2-a668-2274d3cfba96" type="FixedString" />
+            </node>
+            <node id="Module">
+              <attribute id="UUID" value="d903677e-f24b-48ec-ab20-98dcc116a371" type="FixedString" />
+            </node>
+            <node id="Module">
+              <attribute id="UUID" value="88fadf2c-152d-404e-b863-c12273559e1c" type="FixedString" />
+            </node>
+            <node id="Module">
+              <attribute id="UUID" value="00956b6f-8b55-4879-bd46-68d1ba7ef31b" type="FixedString" />
+            </node>
+            <node id="Module">
+              <attribute id="UUID" value="4cb0fd40-7212-4fe9-8733-9a8dbc6637ae" type="FixedString" />
+            </node>
+            <node id="Module">
+              <attribute id="UUID" value="da0b99ca-4406-49c1-bef9-3a08621280a2" type="FixedString" />
+            </node>
+            <node id="Module">
+              <attribute id="UUID" value="53a60364-2db0-4556-ae35-95ed9fcf9703" type="FixedString" />
+            </node>
+            <node id="Module">
+              <attribute id="UUID" value="ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa" type="FixedString" />
+            </node>
+            <node id="Module">
+              <attribute id="UUID" value="04426b70-cbd9-4061-934a-6e2f7d24ab42" type="FixedString" />
+            </node>
+          </children>
+        </node>
+        <node id="Mods">
+          <children>
+            <node id="ModuleShortDesc">
+              <attribute id="Folder" value="GustavDev" type="LSString" />
+              <attribute id="MD5" value="9a704697f3b8d390347f0aea21d02074" type="LSString" />
+              <attribute id="Name" value="GustavDev" type="LSString" />
+              <attribute id="UUID" value="28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8" type="FixedString" />
+              <attribute id="Version64" value="144820164012315624" type="int64" />
+            </node>
+            <node id="ModuleShortDesc">
+              <attribute id="Folder" value="5eSpells" type="LSString" />
+              <attribute id="MD5" value="" type="LSString" />
+              <attribute id="Name" value="5eSpells" type="LSString" />
+              <attribute id="UUID" value="fb5f528d-4d48-4bf2-a668-2274d3cfba96" type="FixedString" />
+              <attribute id="Version64" value="36169545244737539" type="int64" />
+            </node>
+            <node id="ModuleShortDesc">
+              <attribute id="Folder" value="UnlockLevelCurve" type="LSString" />
+              <attribute id="MD5" value="" type="LSString" />
+              <attribute id="Name" value="UnlockLevelCurve" type="LSString" />
+              <attribute id="UUID" value="d903677e-f24b-48ec-ab20-98dcc116a371" type="FixedString" />
+              <attribute id="Version64" value="72057594037927954" type="int64" />
+            </node>
+            <node id="ModuleShortDesc">
+              <attribute id="Folder" value="Artificer" type="LSString" />
+              <attribute id="MD5" value="" type="LSString" />
+              <attribute id="Name" value="Artificer" type="LSString" />
+              <attribute id="UUID" value="88fadf2c-152d-404e-b863-c12273559e1c" type="FixedString" />
+              <attribute id="Version64" value="74450137782419456" type="int64" />
+            </node>
+            <node id="ModuleShortDesc">
+              <attribute id="Folder" value="EyesOfTheBeholder" type="LSString" />
+              <attribute id="MD5" value="" type="LSString" />
+              <attribute id="Name" value="EotB Main - EyesOfTheBeholder" type="LSString" />
+              <attribute id="UUID" value="00956b6f-8b55-4879-bd46-68d1ba7ef31b" type="FixedString" />
+              <attribute id="Version64" value="36028797018963968" type="int64" />
+            </node>
+            <node id="ModuleShortDesc">
+              <attribute id="Folder" value="unique_tav" type="LSString" />
+              <attribute id="MD5" value="" type="LSString" />
+              <attribute id="Name" value="unique_tav" type="LSString" />
+              <attribute id="UUID" value="4cb0fd40-7212-4fe9-8733-9a8dbc6637ae" type="FixedString" />
+              <attribute id="Version64" value="36873221949095936" type="int64" />
+            </node>
+            <node id="ModuleShortDesc">
+              <attribute id="Folder" value="DFHairPack" type="LSString" />
+              <attribute id="MD5" value="" type="LSString" />
+              <attribute id="Name" value="Tav's Hairpack" type="LSString" />
+              <attribute id="UUID" value="da0b99ca-4406-49c1-bef9-3a08621280a2" type="FixedString" />
+              <attribute id="Version64" value="37295434414161920" type="int64" />
+            </node>
+            <node id="ModuleShortDesc">
+              <attribute id="Folder" value="WingsAndHalos" type="LSString" />
+              <attribute id="MD5" value="" type="LSString" />
+              <attribute id="Name" value="Wings And Halos By Ren" type="LSString" />
+              <attribute id="UUID" value="53a60364-2db0-4556-ae35-95ed9fcf9703" type="FixedString" />
+              <attribute id="Version64" value="36028797018963968" type="int64" />
+            </node>
+            <node id="ModuleShortDesc">
+              <attribute id="Folder" value="Aasimar" type="LSString" />
+              <attribute id="MD5" value="" type="LSString" />
+              <attribute id="Name" value="Aasimar" type="LSString" />
+              <attribute id="UUID" value="ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa" type="FixedString" />
+              <attribute id="Version64" value="36028799166447619" type="int64" />
+            </node>
+            <node id="ModuleShortDesc">
+              <attribute id="Folder" value="Aasimar - Unique Tav" type="LSString" />
+              <attribute id="MD5" value="" type="LSString" />
+              <attribute id="Name" value="Aasimar - Unique Tav" type="LSString" />
+              <attribute id="UUID" value="04426b70-cbd9-4061-934a-6e2f7d24ab42" type="FixedString" />
+              <attribute id="Version64" value="36451015926480903" type="int64" />
+            </node>
+          </children>
+        </node>
+      </children>
+    </node>
+  </region>
+</save>
