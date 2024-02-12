@@ -44,9 +44,9 @@ class Linux():
         pass
 
 class SmartyControl():
+    # inital variables
     def __init__(self, UserData: tuple) -> None:
-        self.dataPath = UserData[0]
-        self.modPath = UserData[1]
+        self.dataPath, self.modPath = UserData
 
     # TODO: figure out how the fuck this works with lxml
     def run_xpath_group(self, xpath, queries) -> dict:
@@ -56,10 +56,12 @@ class SmartyControl():
                 ret[item.xpath('attribute[@id="UUID"]')[0].attrib['value']] = item
         return ret.values()
     
+    # another function for lxml
     def or_add(self, target, add):
         target.extend(add)
         return add
 
+    # used to generate new UUIDs for metadata
     def generateV4UUID(self) -> uuid.UUID:
         return uuid.uuid4()
     
@@ -69,8 +71,11 @@ class SmartyControl():
     #       gonna be the hackiest bullshit i can come up with...
     #       https://bg3.wiki/wiki/Python_example_for_working_with_.lsx
     def readSettings(self) -> dict:
-        
+        pass
 
+    # TODO: write function to append/modify/destroy existing data in modsettings.lsx
+    #       preferably using lxml to keep down on requirements
+    def writeSettings(self) -> bool:
         pass
 
     def testfunction(self):
