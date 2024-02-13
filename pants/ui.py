@@ -1,54 +1,56 @@
-import tkinter as tk
-from tk import *
-from tkinter import ttk, messagebox
+import webview
+import webview.menu as wm
 
-def button_func():
-    print('a button was pressed')
+def change_active_window_content():
+    active = webview.active_window()
+    if active:
+        active.load_html('<h1>You changed this window!</h1>')
+    
+def click_me():
+    active = webview.active_window()
+    if active:
+        active.load_html('<h1>You clicked me!</h1>')
 
-# commands run when window closed
-def on_closing():
-    if messagebox.askokcancel("Quit", "Do you want to quit?"):
-        root.destroy()
+def do_nothing():
+    pass
 
-# placeholder function for anything that requires a function that hasn't been written yet
-def void():
-    return None
+def open_file_dialog():
+    active = webview.active_window()
+    active.create_file_dialog(webview.SAVE_DIALOG, directory='/', save_filename='test.file')
 
-#import sv_ttk
+def make_sticky():
+    active = webview.active_window()
+    if active:
+        if active.on_top is False:
+            active.on_top = True
+        else:
+            active.on_top = False
 
-# create window
-root = tk.Tk()
-root.title('Window and Widgets')
-root.geometry('800x500')
+if __name__ == '__main__':
+    window_1 = webview.create_window(
+        'Application Menu Example', 'https://pywebview.flowrl.com/hello'
+    )
+    window_2 = webview.create_window(
+        'Another Window', html = '<h1>Another window to test application menu</h1>'
+    )
 
-# menubar
-menubar = tk.Menu(master=root)
-filemenu = tk.Menu(master=menubar, tearoff=0)
-filemenu.add_command(label="New", command=void)
-filemenu.add_command(label="Open", command=void)
-filemenu.add_command(label="Save", command=void)
-filemenu.add_separator()
-filemenu.add_command(label="Exit", command=root.quit)
-menubar.add_cascade(label="File", menu=filemenu)
+    menu_items = [
+        wm.Menu(
+            'Test Menu',
+            [
+                wm.MenuAction('Change Active Window Content', change_active_window_content),
+                wm.MenuSeparator(),
+                wm.Menu(
+                    'Random',
+                    [
+                        wm.MenuAction('Click Me', click_me),
+                        wm.MenuAction('File Dialog', open_file_dialog),
+                    ],
+                ),
+            ],
+        ),
+        wm.Menu('Nothing Here', [wm.MenuAction('This will do nothing', do_nothing)]),
+    ]
 
-# ttk label
-label = ttk.Label(master=root, text="this is a test")
-label.pack()
 
-# tk.Text
-text = tk.Text(master=root)
-text.pack()
-
-# ttk.Entry
-entry = ttk.Entry(master=root)
-entry.pack()
-
-# function button
-button = ttk.Button(master=root, text='button', command=button_func)
-button.pack()
-
-#sv_ttk.set_theme("dark")
-
-root.config(menu=menubar)
-root.protocol("WM_DELETE_WINDOW", on_closing)
-root.mainloop()
+    webview.start(menu=menu_items)
