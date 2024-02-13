@@ -45,11 +45,13 @@ if __name__ == '__main__':
                     [
                         wm.MenuAction('Click Me', click_me),
                         wm.MenuAction('File Dialog', open_file_dialog),
+                        wm.MenuAction('Always On Top', make_sticky)
                     ],
                 ),
             ],
         ),
         wm.Menu('Nothing Here', [wm.MenuAction('This will do nothing', do_nothing)]),
+        wm.Menu('View',[wm.MenuAction('Always On Top', make_sticky)]),
     ]
 
 
